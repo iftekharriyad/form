@@ -8,8 +8,8 @@
         $subject='comment';
         $message="Name: ".$name."\n"."Email: ".$email."\n"."Wrote the following: "."\n\n".$comment;
         $headers="From: ".$email;
-        if(mail($to,$subject,$message)){
-            echo "success !"
+        if(mail($to,$subject,$message,$headers)){
+            echo "success !";
         }
         else{
             echo "something wrong";
